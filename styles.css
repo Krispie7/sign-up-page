@@ -27,30 +27,45 @@ img{
     display: flex;
     width: 60%;
     flex-direction: column;
-    padding: 1.5rem;
 }
 
 #textBox{
+    padding: 1.5rem;
+    display: flex;
+    align-items: stretch;
     height: 33%;
+    flex-direction: column;
+    justify-content: left;
 }
 
 #formBox{
-    box-shadow: 5px;
     height: 33%;
     padding: 1rem;
+    border-color: transparent;
+    background-color: rgb(25 130 200);
+
 }
 
 form{
     display: grid;
     grid-template-columns: auto auto;
-    width: 100%;
-    height: 100%;
+    column-gap: 3rem;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+label{
+    display: flex;
+    align-items: center;
 }
 
 input{
     border-radius: .5rem;
     border-color: black;
     border-width: .1rem;
+    width: 15rem;
+    height: 2.5rem;
+    font-size: 1rem;
 }
 
 button{
@@ -66,6 +81,12 @@ button{
 #callToAction{
     padding: 20px;
     height: 33%;
+}
+
+p{
+    display: flex;
+    flex-grow: 1;
+    font-size: 1.25rem;
 }
 /*
 @media (min-width:40rem){
