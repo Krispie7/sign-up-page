@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+#pageContainer{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    font-family: Pacifico, sans-serif;
+}
+
+#image{
+    background-image: url(felicia-buitenwerf-kGLYLMVs83g-unsplash.jpg);
+    width: 33%;
+    height: auto;
+}
+
+#textBox{
+    height: 33%;
+}
+
+#informationBox{
+    box-shadow: 5px;
+    height: 33%;
+}
+
+#content{
+    display: flex;
+    width:66%;
+    height: auto;
+    padding: 0px;
+    flex-direction: column;
+}
+
+form{
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 50%;
+}
+
+button{
+    background-color: rgb(33 145 219);
+    color: white;
+    height: 30px;
+    width: 175px;
+    border-radius: 5px;
+    border-color: transparent;
+    padding: 5px;
+}
+
+#callToAction{
+    padding: 20px;
+    height: 33%;
+}
