@@ -88,6 +88,14 @@ p{
     flex-grow: 1;
     font-size: 1.25rem;
 }
+
+#passWarning{
+    color:red;
+    font-size: .75rem;
+    grid-column: 2;
+    justify-content: center;
+    visibility: hidden;
+}
 /*
 @media (min-width:40rem){
     #pageContainer{
