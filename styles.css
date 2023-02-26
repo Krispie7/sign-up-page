@@ -1,32 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Pacifico&family=Roboto:ital@1&display=swap');
+:root{
+    box-sizing: border-box;
+    font-size: .75rem;
+}
+
 
 body{
-    display: flex;
     background-color: rgb(33 33 33);
-    justify-content: center;
-    max-height: 55rem;
+    max-height: 90vh;
 }
+
 #pageContainer{
-    margin: 5% 5%;
-    width: 80%;
     display: flex;
-    font-family: Inter, helvetica, Roboto, sans-serif;
-    flex-direction: row;
+    flex-direction: column;
     color: white;
     background-color: rgb(33 145 219);
+    align-items: center;
     border-radius: 1.5rem;
+    padding: 3%;
+    margin: 5%;
+    column-gap: 2rem;
+    font-family: Inter, helvetica, Roboto, sans-serif;
+    max-height: 90vh;
+    max-width: 90vw;
+}
+
+#imageContainer{
+    display: flex;
+    background-color: rgb(33 33 33);
+    width: 100%;
+    border-radius: 1rem;
+    flex-grow: 1;
 }
 
 img{
-    width: 40%;
-    height: auto;
-    border-radius: 1.5rem;
+    padding: 5%;
+    height: 20rem;
+    border-radius: 2rem;
+    width: 90%;
+    object-fit: cover;
 }
 
 #content{
     display: flex;
-    width: 60%;
     flex-direction: column;
+    flex-grow:1;
+}
+
+
+#content{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
 }
 
 #textBox{
@@ -43,16 +69,11 @@ img{
     padding: 1rem;
     border-color: transparent;
     background-color: rgb(25 130 200);
-
+    max-width: 100%;
+    border-radius: 1rem;
+    justify-content: center;
 }
 
-form{
-    display: grid;
-    grid-template-columns: auto auto;
-    column-gap: 3rem;
-    align-items: center;
-    row-gap: 1rem;
-}
 
 label{
     display: flex;
@@ -60,14 +81,15 @@ label{
 }
 
 input{
+    display: flex;
     border-radius: .5rem;
     border-color: black;
     border-width: .1rem;
-    width: 15rem;
-    height: 2.5rem;
+    width: auto;
+    max-height: 2.5rem;
     font-size: 1rem;
 }
- 
+
 button{
     background-color: rgb(25 130 200);
     color: white;
@@ -80,14 +102,15 @@ button{
 }
 
 #callToAction{
-    padding: 20px;
-    height: 33%;
+    padding: 1rem;
+    background-color: rgb(33 145 219);
 }
 
 p{
     display: flex;
     flex-grow: 1;
-    font-size: 1.25rem;
+    font-size: 2.5rem;
+    margin: .5rem;
 }
 
 #passWarning{
@@ -96,4 +119,13 @@ p{
     grid-column: 2;
     justify-content: center;
     visibility: hidden;
+}
+
+@media (min-width: 1000px){
+    #pageContainer{
+        flex-direction: row;
+    }
+    img{
+        height: 60vh;
+    }
 }
